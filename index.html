@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Responsive Dashborad</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- left side and navigation start here -->
+      <div class="navigation">
+        <ul>
+          <!-- brand section start-->
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+              <span class="title">Brand</span>
+            </a>
+          </li>
+          <!-- brand section end  -->
+          <li class="hovered">
+            <a href="#">
+              <span class="icon"><ion-icon name="home"></ion-icon></span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="people"></ion-icon></span>
+              <span class="title">Customers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="chatboxes"></ion-icon></span>
+              <span class="title">Message</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="help-circle-outline"></ion-icon
+              ></span>
+              <span class="title">Help</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="settings"></ion-icon></span>
+              <span class="title">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="lock"></ion-icon></span>
+              <span class="title">Password</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="log-out"></ion-icon></span>
+              <span class="title">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- left side and navigation end here -->
+
+      <!-- main section start here -->
+      <div class="main">
+        <!-- topbar start -->
+        <div class="topbar">
+          <!-- menu -->
+          <div class="toggle">
+            <ion-icon name="menu"></ion-icon>
+          </div>
+          <!-- search -->
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search..." />
+              <ion-icon name="search"></ion-icon>
+            </label>
+          </div>
+          <!-- user -->
+          <div class="user">
+            <img src="./img/img5.jpg" alt="user-img" />
+          </div>
+        </div>
+        <!-- topbar end  -->
+
+        <!--overview card section start -->
+        <div class="cardbox">
+          <!-- single card -->
+          <div class="card">
+            <div>
+              <div class="numbers"><span class="counter">105,444</span></div>
+              <div class="cardname">Daily Views</div>
+            </div>
+            <div class="iconbox">
+              <ion-icon name="eye"></ion-icon>
+            </div>
+          </div>
+          <!-- single card -->
+          <div class="card">
+            <div>
+              <div class="numbers">106545</div>
+              <div class="cardname">Sales</div>
+            </div>
+            <div class="iconbox">
+              <ion-icon name="cart"></ion-icon>
+            </div>
+          </div>
+          <!-- single card -->
+          <div class="card">
+            <div>
+              <div class="numbers">465654</div>
+              <div class="cardname">Comments</div>
+            </div>
+            <div class="iconbox">
+              <ion-icon name="quote"></ion-icon>
+            </div>
+          </div>
+          <!-- single card -->
+          <div class="card">
+            <div>
+              <div class="numbers">$64546</div>
+              <div class="cardname">Eearnings</div>
+            </div>
+            <div class="iconbox">
+              <ion-icon name="wallet"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!--overview card section end -->
+
+        <!-- chart area start here  -->
+        <div class="graphbox">
+          <div class="box">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="box">
+            <canvas id="myChart2"></canvas>
+          </div>
+        </div>
+        <!-- chat area ends here -->
+
+        <!-- order details list start  -->
+        <div class="details">
+          <div class="recentorders">
+            <div class="cardheader">
+              <h2>Recent Orders</h2>
+              <a href="#" class="btn">View All</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td>Payment</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Television</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Deliverd</span></td>
+                </tr>
+                <tr>
+                  <td>Air Conditioner</td>
+                  <td>$1200</td>
+                  <td>Due</td>
+                  <td><span class="status inprogress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Air Conditioner</td>
+                  <td>$1200</td>
+                  <td>Due</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Air Conditioner</td>
+                  <td>$1200</td>
+                  <td>Due</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>Television</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Deliverd</span></td>
+                </tr>
+                <tr>
+                  <td>Air Conditioner</td>
+                  <td>$1200</td>
+                  <td>Due</td>
+                  <td><span class="status inprogress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Air Conditioner</td>
+                  <td>$1200</td>
+                  <td>Due</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Air Conditioner</td>
+                  <td>$1200</td>
+                  <td>Due</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>Television</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Deliverd</span></td>
+                </tr>
+                <tr>
+                  <td>Air Conditioner</td>
+                  <td>$1200</td>
+                  <td>Due</td>
+                  <td><span class="status inprogress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Air Conditioner</td>
+                  <td>$1200</td>
+                  <td>Due</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Air Conditioner</td>
+                  <td>$1200</td>
+                  <td>Due</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- new customers start -->
+          <div class="recentcustomers">
+            <div class="cardheader">
+              <h2>Recent Customers</h2>
+            </div>
+            <table>
+              <tr>
+                <td>
+                  <div class="imgbox">
+                    <img src="./img/img1.jpg" alt="img" />
+                  </div>
+                </td>
+                <td>
+                  <h4>
+                    Jishan <br />
+                    <span>Bangladesh</span>
+                  </h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgbox">
+                    <img src="./img/img2.jpg" alt="img" />
+                  </div>
+                </td>
+                <td>
+                  <h4>
+                    Saad <br />
+                    <span>India</span>
+                  </h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgbox">
+                    <img src="./img/img3.jpg" alt="img" />
+                  </div>
+                </td>
+                <td>
+                  <h4>
+                    Fahad <br />
+                    <span>Nepal</span>
+                  </h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgbox">
+                    <img src="./img/img4.jpg" alt="img" />
+                  </div>
+                </td>
+                <td>
+                  <h4>
+                    Rafi <br />
+                    <span>Sri Lanka</span>
+                  </h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgbox">
+                    <img src="./img/img5.jpg" alt="img" />
+                  </div>
+                </td>
+                <td>
+                  <h4>
+                    Tonmoy <br />
+                    <span>Bangladesh</span>
+                  </h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgbox">
+                    <img src="./img/img1.jpg" alt="img" />
+                  </div>
+                </td>
+                <td>
+                  <h4>
+                    Jishan <br />
+                    <span>Bangladesh</span>
+                  </h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgbox">
+                    <img src="./img/img2.jpg" alt="img" />
+                  </div>
+                </td>
+                <td>
+                  <h4>
+                    Saad <br />
+                    <span>India</span>
+                  </h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgbox">
+                    <img src="./img/img3.jpg" alt="img" />
+                  </div>
+                </td>
+                <td>
+                  <h4>
+                    Fahad <br />
+                    <span>Nepal</span>
+                  </h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgbox">
+                    <img src="./img/img4.jpg" alt="img" />
+                  </div>
+                </td>
+                <td>
+                  <h4>
+                    Rafi <br />
+                    <span>Sri Lanka</span>
+                  </h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgbox">
+                    <img src="./img/img5.jpg" alt="img" />
+                  </div>
+                </td>
+                <td>
+                  <h4>
+                    <span class="counter">1,234,567.00</span>
+                    Tonmoy <br />
+                    <span>Bangladesh</span>
+                  </h4>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- new customers end  -->
+        </div>
+        <!-- order details list end  -->
+      </div>
+      <!-- main section end here -->
+    </div>
+
+    <!-- ionicons cdn   -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- chart js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <!-- custom script  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
